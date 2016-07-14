@@ -2,13 +2,16 @@
   box-sizing: border-box;
 }
 
-body{
+html, body{
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(http://wallpapercave.com/wp/K4VpTDY.jpg);
+  /*background-image: url(http://wallpapercave.com/wp/K4VpTDY.jpg);*/
+  background-image: url(http://www.ilovewallpaper.ie/images/products/1348138481-81104000.jpg);
   background-size: cover;
   height: 100vh;
   background-position: center;
+  background-attachment: fixed;
 }
 
 /************Navigation*********************/
@@ -20,6 +23,8 @@ body{
   text-align: center;
   padding: 0;
   margin: 0;
+  background-color: white;
+  opacity: .65;
 }
 .nav li{
   font-family: 'Oswald', sans-serif;
@@ -29,31 +34,27 @@ body{
   width: 120px;
   display: inline-block;
   border-bottom: none;
-  margin-right: -4px;
-  opacity: 0.9;
 }
 .nav a{
   text-decoration: none;
-  color: #fff;
+  color: black;
   display: block;
   transition: .3s background-color;
 }
 .nav li:hover{
-  background-color: #dfaf20;
+  background-color: #0099cc;
   opacity: 0.9;
   filter: alpha(opacity=100);
 }
-
 .nav a:active{
   background-color: #fff;
-  color: #444;
 }
 
 /***************Hero*******************/
 .homepage-title {
   height: 300px;
   width: 100%;
-  font-family: sans-serif;
+  font-family: 'Pacifico', cursive;
   color: grey;
 }
 .homepage-words{
@@ -61,50 +62,28 @@ body{
   width: 100%;
   vertical-align: middle;
   position: absolute;
-  top: 20%;
+  top: 15%;
   text-align: center;
-  color: #0099cc;
+  font-size: 1.2em;
+  font-family: 'Pacifico', cursive;
 }
 .homepage-words > h1{
-  font-size: 3em;
-  font-family: 'Great Vibes', sans-serif;
-  letter-spacing: .15em;
   margin-top: .1em;
-  margin-bottom: .5em;
+  margin-bottom: .4em;
+  font-family: 'Pacifico', cursive;
 }
-.heroContent{
-  position: absolute;
-  top: 15%;
-  left: 3%;
-  font-family: 'Great Vibes', sans-serif;
-  color: #0099cc;
-  font-size: 2.5em;
-  letter-spacing: .15em;
+.homepage-words > h3{
+  color: white;
 }
 
-/***********Main***************/
-.content{
-  border: 2px solid black;
-  width: 65%;
-  height: 100%;
-  float: right;
-  background-color: white;
-  margin-right: 20px;
-}
-.content-words{
-  width: 96%;
-  height: 96%;
-  margin: 10px;
-  border: 2px solid black;
-}
-
-/***********Windowboxes******************/
-.circles{
+/***********Homepage Windowboxes******************/
+.circles-section{
   height: 200px;
   width: 100%;
   position: relative;
+  top: 5%;
 }
-.container{
+.circles-container{
   margin: 0;
   position: absolute;
   top: 50%;
@@ -112,36 +91,179 @@ body{
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+.outer-box{
+  display: inline;
+}
 .box{
   height: 175px;
   width: 175px;
   margin: 10px;
   float: left;
   border-radius: 100%;
-  text-align: center;
-  border: 5px solid black;
-  /*opacity: 0.5;*/
+  border: 3px solid black;
+  background-color: white;
+  opacity: .8;
+  position: relative;
+  transition: .4s;
+}
+.box > h3{
+  text-transform: uppercase;
+  position: absolute;
+  top: 40%;
+  left: 24%;
 }
 img{
   max-width: 100%;
   border-radius: 100%;
 }
-.better-box{
-  display: inline;
-}
 .box:hover{
-  border: 5px solid #dfaf20;
+  border: 3px solid #0099cc;
   opacity: 1;
+  transform: rotate(45deg)
+}
+
+/***********Split Letters*************/
+/*.splitText{
+width: 600px;
+float: left;
+margin-top: 90px;
+margin-left: 20px;
+font-size:20px;
+}*/
+/*.splitText>div{
+	white-space:pre-line;
+	float:left;
+	margin-right:5px;
+}*/
+/*#menu{
+	width:100%;
+	background-color:#222222;
+	height:60px;
+	position: fixed;
+	top:0px;
+	left:0px;
+	margin-bottom:20px;
+}*/
+/*.menuItem{
+  cursor: pointer;
+}*/
+/*.menuItem{
+	background-color:#105CB6;
+	color:#000000;
+	text-align:center;
+	float:left;
+	position:relative;
+	margin-right:10px;
+	height:40px;
+	line-height:40px;
+	font-size:20px;
+	cursor: pointer;
+	top:10px;
+	padding-left:10px;
+	padding-right:10px;
+}*/
+/*.split-lines{
+
+}*/
+.letter-measure{
+	margin-right:0 !important;
+}
+.blank{
+	margin-right:0px !important;
+	white-space: pre !important;
+}
+
+/***********Portfolio & Contact Page***************/
+.content{
+  border: 2px solid black;
+  width: 80%;
+  margin: auto;
+  height: 99%;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/*********************Resume Content**************/
+.resume-container{
+  width: 75%;
+  margin: auto;
+}
+h1{
+  font-family: 'Pacifico', cursive;
+  font-size: 4em;
+  color: red;
+  font-weight: lighter;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+h3, h4, h5, li{
+  font-family: 'Oswald', sans-serif;
+}
+p{
+  font-family: 'Oxygen', sans-serif;
+}
+h3{
+  text-transform: uppercase;
+  color: #006080;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+h4{
+  margin-bottom: 3px;
+}
+h5{
+  margin-top: 3px;
+  font-weight: normal;
+}
+/*****For possible future image******/
+/*.resume-container > img{
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+}*/
+.resume-section{
+  margin: 10px;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 15px;
+}
+.resume-section-title{
+  display: inline;
+  width: 23%;
+  margin-top: 5px;
+  margin-right: 5px;
+  position: relative;
+  top: 8px;
+  left: 5px;
+}
+.resume-section-description{
+  display: inline;
+  width: 73%;
+  float: right;
+  border-left: 2px solid #dfaf20;
+  padding: 20px;
+  height: 100%;
+}
+.years{
+  float: right;
+  color: grey;
 }
 
 
 /*********************************
 **********Small Screen***********/
 @media screen and (max-width: 665px) {
-  .nav{
-    z-index: 20;
-    /*height: 188px;  Needed for template nav--- how to add?  */
-  }
+
   .nav ul{
     display: block;
     margin-top: 0;
@@ -151,7 +273,7 @@ img{
     margin: 0;
   }
   .nav li{
-    border-bottom: 1px solid #D09537;
+    border-bottom: 1px solid #0099cc;
     width: 100%;
     height: 2.1em;
     padding-top: 0;
@@ -167,26 +289,28 @@ img{
   .heroContent{
     width: 100%;
     text-align: center;
-    top: 25%;
-  }
-  h1{
-    margin-left: -15%;
+    top: 10%;
   }
 
   /**********Small Home Page Circles*********/
-   .container{
+  .circles-section{
+    position: relative;
+    top: 6%;
+  }
+   .circles-container{
      top: 200%;
    }
-   .better-box{
+   .outer-box{
      width: 100%;
      display: block;
    }
 
-  /***********Small Main Content***********/
+  /***********Small Homepage Content***********/
   .homepage-words{
       vertical-align: middle;
       position: absolute;
-      top: 45%;
+      top: 35%;
+      font-size: .9em;
   }
   .content{
     width: 100%;
@@ -195,6 +319,36 @@ img{
     position: absolute;
     top: 50%;
   }
+  .heroTitle{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+  }
 
+  /************Small Resume**********************/
+  .resume-container{
+    width: 100%;
+    margin: auto;
+    float: left;
+    position: absolute;
+    top: 37%;
+  }
+  .resume-head{
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .resume-section-title{
+    float: left;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #dfaf20;
+  }
+  .resume-section-description{
+    float:left;
+    border: none;
+    width: 100%;
+  }
 
 }
