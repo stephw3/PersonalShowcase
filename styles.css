@@ -6,7 +6,6 @@ html, body{
   height: 100%;
   margin: 0;
   padding: 0;
-  /*background-image: url(http://wallpapercave.com/wp/K4VpTDY.jpg);*/
   background-image: url(http://www.ilovewallpaper.ie/images/products/1348138481-81104000.jpg);
   background-size: cover;
   height: 100vh;
@@ -173,17 +172,9 @@ font-size:20px;
 	white-space: pre !important;
 }
 
-/***********Portfolio & Contact Page***************/
-.content{
-  border: 2px solid black;
-  width: 80%;
-  margin: auto;
-  height: 99%;
-  background-color: white;
-  border-radius: 15px;
-}
 
-/*********************Resume Content**************/
+
+/**********Resume Page**************/
 .resume-container{
   width: 75%;
   margin: auto;
@@ -199,6 +190,10 @@ h1{
 }
 h3, h4, h5, li{
   font-family: 'Oswald', sans-serif;
+}
+.volunteer-title{
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
 }
 p{
   font-family: 'Oxygen', sans-serif;
@@ -217,16 +212,6 @@ h5{
   margin-top: 3px;
   font-weight: normal;
 }
-/*****For possible future image******/
-/*.resume-container > img{
-  height: 150px;
-  width: 150px;
-  border: 2px solid black;
-  border-radius: 100%;
-  margin-top: 10px;
-  margin-left: 10px;
-  float: left;
-}*/
 .resume-section{
   margin: 10px;
   float: left;
@@ -250,13 +235,133 @@ h5{
   display: inline;
   width: 73%;
   float: right;
-  border-left: 2px solid #dfaf20;
+  border-left: 4px solid grey;
   padding: 20px;
   height: 100%;
 }
 .years{
   float: right;
   color: grey;
+}
+
+
+/*********Portfolio Page***********/
+.portfolio-content{
+  width: 80%;
+  margin: auto;
+}
+.card-container{
+  height: 320px;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+.card-left{
+  height: 40%;
+  width: 29%;
+  position:absolute;
+  float: left;
+}
+.inner-card-left > img{
+  height: 150px;
+  width: 150px;
+  border-radius: 0;
+  margin-top: 2%;
+  margin-left: 10px;
+  float: left;
+}
+.card-right{
+  height: 100%;
+  width: 60%;
+  position: relative;
+  float: right;
+  font-family: 'Oswald';
+}
+.card-right > h3{
+  font-family: 'Oswald';
+  font-size: 1.3em;
+  text-transform: uppercase;
+  color: #006080;
+  float: left;
+  margin-left: 5px;
+}
+.card-right > h4{
+  font-family: 'Oswald';
+}
+.card-right > ul{
+  margin-top: 40px;
+}
+.card-description{
+  height: 50%;
+  width: 100%;
+  border-top: 3px solid grey;
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+}
+.card-description > p{
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Oxygen';
+}
+
+/*********Contact Page*******/
+
+/*****For possible image******/
+/*.resume-container > img{
+  height: 150px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+}*/
+/***********Contact Page***************/
+.contact-content{
+  border: 2px solid black;
+  width: 80%;
+  margin: auto;
+  height: 400px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+/*********Social Buttons - Contact Page**********/
+a, a:hover {
+	text-decoration: none;
+}
+.socialbtns, .socialbtns ul, .socialbtns li, .contact-info {
+  margin: 0;
+  padding: 5px;
+}
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+.socialbtns .fa, .contact-info .fa {
+	width: 40px;
+  height: 40px;
+	color: #006080;
+	background-color: #FFF;
+	border: 2px solid black;
+	padding-top: 10px;
+	border-radius: 100%;
+}
+.contact-info .fa {
+  border-style: none;
+}
+.contact{
+  display: inline;
+}
+.socialbtns .fa:hover {
+	color: #FFF;
+	background-color: #006080;
+	border: 2px solid #006080;
 }
 
 
@@ -343,7 +448,8 @@ h5{
     float: left;
     width: 100%;
     padding-bottom: 5px;
-    border-bottom: 1px solid #dfaf20;
+    border-bottom: 3px solid grey;
+    left: 0;
   }
   .resume-section-description{
     float:left;
@@ -351,4 +457,21 @@ h5{
     width: 100%;
   }
 
-}
+/**********Small Portfolio**********/
+  .portfolio-content{
+    width: 100%;
+    margin: auto;
+    float: left;
+    position: absolute;
+    top: 46%;
+  }
+
+
+/*********Small Contact************/
+  .contact-content{
+    width: 100%;
+    margin: auto;
+    float: left;
+    position: absolute;
+    top: 65%;
+  }
