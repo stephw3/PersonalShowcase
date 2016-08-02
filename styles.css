@@ -109,7 +109,7 @@ html, body{
   text-transform: uppercase;
   position: absolute;
   top: 40%;
-  left: 24%;
+  left: 28%;
 }
 img{
   max-width: 100%;
@@ -118,7 +118,12 @@ img{
 .box:hover{
   border: 3px solid #0099cc;
   opacity: 1;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
+  cursor: pointer;
+  color: #0099cc;
+}
+.box a:visited{
+  color: #0099cc;
 }
 
 /***********Split Letters*************/
